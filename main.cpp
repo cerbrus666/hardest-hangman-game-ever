@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <iostream>
 
 int main() {
-	printf("Hello world");
-	printf("Hello Pull request")
+	char n;
+	std::cout << "Enter a character: ";
+	std::cin >> n;
 }
