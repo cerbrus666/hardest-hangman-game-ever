@@ -7,6 +7,7 @@ int main() {
 	const char guess_this_word[8] = "Hangman"; // Use char c-string
 	char guessed_word[8] = "_______";
 	std::cout << "Enter a character: ";
+	std::cout << guessed_word;
 	std::cin.getline(n, 50);
 	while (strlen(n) > 1) {
 		std::cout << strlen(n) << std::endl;
@@ -22,7 +23,11 @@ int main() {
 	}
 	
 	// If present, get the index in guess_this_word array
-	// 
+	// for i=1, i < strlen(guessed_word), i++ , loop length of the word
+	// if guessed_word[i] == n
+	// array index_store, store current i
+	// get length of index_store, loop, and assign guessed_word[item in index_store]
+	//  
 	// 
 	// 
 	// Think about case with multiple same characters in word
@@ -30,5 +35,7 @@ int main() {
 	// 
 	// 
 	// How to display the current status of guessed words?
+	// print guessed_word?
+	
 
 }
