@@ -4,10 +4,11 @@
 int main() {
 	// Input word & constants
 	char n[100];
-	const char guess_this_word[8] = "Hangman"; // Use char c-string
+	const char guess_this_word[8] = "hangman"; // Use char c-string
 	char guessed_word[8] = "_______";
 	int die = 0;
-	while(strcmp(guessed_word, guess_this_word) != 0){
+	while (strcmp(guessed_word, guess_this_word) != 0) {
+		// Need to think how to handle capital char cases
 		std::cout << "The word is: " << guessed_word << std::endl;
 		std::cout << "Enter a character to guess: ";
 		std::cin.getline(n, 50);
@@ -44,3 +45,5 @@ int main() {
 			return 0;
 		}
 	}
+
+}
